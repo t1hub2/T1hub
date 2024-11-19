@@ -1,6 +1,12 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "T1 hub / Первый русский скрипт!!", HidePremium = false, IntroText = "T1 hub" , SaveConfig = true, ConfigFolder = "OrionTest"})
 
+OrionLib:MakeNotification({
+ Name = "Предупреждение",
+ Content = "Все скрипты взяты из Legit mods offical discord! Даня не убивай меня :(",
+ Image = "rbxassetid://4483345998",
+ Time = 5
+
 local Tab = Window:MakeTab({
 Name = "Предметы / Скрипты",
 Icon = "rbxassetid://4483345998",
@@ -47,6 +53,38 @@ Callback = function()
   end    
 })
 
+Tab:AddButton({
+Name = "Сикибиди пушка",
+Callback = function()
+      print("Executed Star Jug")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/seekgun.lua"))() 
+  end    
+})
+
+Tab:AddButton({
+Name = "Бомба ракета 2007",
+Callback = function()
+      print("Executed Star Jug")
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/rocketLauncher.lua"))() 
+  end    
+})
+
+Tab:AddButton({
+Name = "Черная дыра",
+Callback = function()
+      print("Executed Star Jug")
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/Black%20Hole.lua"))() 
+  end    
+})
+
+Tab:AddButton({
+Name = "Сик морф",
+Callback = function()
+      print("Executed Star Jug")
+ loadstring(game:HttpGet("https://api.hugebonus.xyz/scripts/TrollFaceSpawner.lua"))() 
+  end    
+})
+
 local Section = Tab:AddSection({
 Name = "Читы"
 })
@@ -56,6 +94,14 @@ Name = "Мс паинт v3 (не обновляется)",
 Callback = function()
       print("Executed Star Jug")
  loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))() 
+  end    
+})
+
+Tab:AddButton({
+Name = "Морфы",
+Callback = function()
+      print("Executed Star Jug")
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))(); 
   end    
 })
 
@@ -71,14 +117,6 @@ Callback = function()
   end    
 })
 
-Tab:AddButton({
-Name = "Текст",
-Callback = function()
-      print("Executed Star Jug")
- loadstring(game:HttpGet("https://raw.githubusercontent.com/T1hub/Text-for-T1-hub/refs/heads/main/Wth.md?token=GHSAT0AAAAAAC2GPNNPHJNY37IVRJJ4GMCQZZOYLFA") 
-  end    
-})
-
 local Section = Tab:AddSection({
 Name = "Моды"
 })
@@ -88,5 +126,13 @@ Name = "Жуткий мод",
 Callback = function()
       print("Executed Star Jug")
  loadstring(game:HttpGet('https://raw.githubusercontent.com/Anzor5458/Mode/refs/heads/main/Creepy%20mode'))() 
+  end    
+})
+
+Tab:AddButton({
+Name = "хаос",
+Callback = function()
+      print("Executed Star Jug")
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/t1hub2/Chaos/3adc3d35de10eb716d85cef84b18f29c2a0b3278/README.lua"))() 
   end    
 })
