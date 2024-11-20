@@ -138,7 +138,7 @@ Callback = function()
 })
 
   local SetTab = Window:MakeTab({
-Name = "Кастамизация",
+Name = "Настройки",
 Icon = "rbxassetid://137276252142963",
 PremiumOnly = false
 })
