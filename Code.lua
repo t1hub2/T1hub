@@ -136,3 +136,21 @@ Callback = function()
  loadstring(game:HttpGet("https://raw.githubusercontent.com/t1hub2/Chaos/3adc3d35de10eb716d85cef84b18f29c2a0b3278/README.lua"))() 
   end    
 })
+
+  local SetTab = Window:MakeTab({
+Name = "Кастамизация",
+Icon = "rbxassetid://137276252142963",
+PremiumOnly = false
+})
+
+SetTab:AddColorpicker({
+      Name = "Цвет читов",
+      Default = Color3.fromRGB(255, 0, 0),
+      Callback = function(Value)
+            print(Value)
+      end	  
+})
+ColorPicker:Set(Color3.fromRGB(255,255,255))
+
+end
+OrionLib:Init()
