@@ -137,6 +137,14 @@ Callback = function()
   end    
 })
 
+Tab:AddButton({
+Name = "Хард мод +5 монстров",
+Callback = function()
+      print("Executed Star Jug")
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/DripCapybara/Doors-Mode-Remakes/refs/heads/main/HardcoreFixed.lua"))() 
+  end    
+})
+  
   local SetTab = Window:MakeTab({
 Name = "Настройки",
 Icon = "rbxassetid://137276252142963",
