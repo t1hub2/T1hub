@@ -137,20 +137,10 @@ Callback = function()
   end    
 })
 
-  local SetTab = Window:MakeTab({
-Name = "Настройки",
-Icon = "rbxassetid://137276252142963",
-PremiumOnly = false
+Tab:AddButton({
+Name = "Хард мод +5 монстров",
+Callback = function()
+      print("Executed Star Jug")
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/DripCapybara/Doors-Mode-Remakes/refs/heads/main/HardcoreFixed.lua"))() 
+  end    
 })
-
-SetTab:AddColorpicker({
-      Name = "Цвет читов",
-      Default = Color3.fromRGB(255, 0, 0),
-      Callback = function(Value)
-            print(Value)
-      end	  
-})
-ColorPicker:Set(Color3.fromRGB(255,255,255))
-
-end
-OrionLib:Init()
